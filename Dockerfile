@@ -5,6 +5,6 @@ RUN pip install django==3.2
 COPY . .
 
 RUN python3 manage.py migrate
-EXPOSE 80
-CMD ["python3","manage.py","runserver","0.0.0.0:8001"]
+EXPOSE 8000
+CMD ["python3","manage.py","runserver","0.0.0.0:8000"]
 
